@@ -1,0 +1,105 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
+/* Style for titles, class = "title*/
+.title {
+  color: rgb(13, 13, 133);
+  font-size: 25pt;
+  font-family: Gill Sans MT;  
+}
+
+/* Style for fig 1 in landpage id = "landpage_fig1
+#landpage_fig1 {
+  fig: 100px
+}
+*/
+/* Change objects sizes depending on the device, cambiar sizes segun 
+tablet, iphone or pc  */
+/* no me esta funcionando, hay algo por sobre este comando 
+@media (max-width: 480px) {
+    #landpage_fig1 {
+    width: 50px;
+    height: 200px;
+    border: #4CAF50;
+  }
+
+}*/
+
+#Visualization_main_container {
+  padding-left: 50px;
+}
+
+#page_title_container {
+  padding-left: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.Visualization_plot {
+  width:681px; 
+  height:469px;
+}
+
+#Visualization_second_container {
+  padding-right: 20px;
+}
+
+
+.Landing_plot {
+  width: 477px;
+  height: 280px;
+  float: left;
+
+}
+
+.paragraph {
+  font-family: 'Gill Sans MT';
+  font-size: 14pt;
+}
+
+.Plot_title {
+  font-family: 'Gill Sans MT';
+  font-size: 20pt; 
+  color: rgb(13, 13, 133);
+  text-align: center;
+}
+
+.Comparision_plot {
+  width: 504px;
+  height: 347px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+#landpage_question {
+  text-align: center;
+}
+
+.navbar-header {
+  background-color: rgba(16, 8, 94, 0.685);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <!-- mobile friendly styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+  <!-- NavBar with Collapsable Menu--> 
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+
+      <!-- TODO:Nuevo boton en navbar que queda fuera del collapsible pero no esta alineado-->
+      <div class= "navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" href="">Outside</a> 
+          </li>
+        </ul>
+      </div>
+    
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"></li>
+        
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href= "Plot.MaxTemp.html">Max Temperature</a></li>
+              <li><a href= "Plot.Humidity.html">Humidity</a></li>
+              <li><a href= "Plot.Cloudiness.html">Cloudines</a></li>
+              <li><a href= "Plot.WindSpeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a target="comparision.html" href="comparision.html">Comparision</a></li>
+          <li><a target="data.html" href="data.html">Data</a></li>
+          <li><a target="about.html" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Row 1 with two containers -->
+  <div class="container-fluid" >
+    <div class="row"><br>
+  
+      <!-- Container with main Plot-->
+      <div class="col-sm-12 col-md-7" id="Visualization_main_container">
+        <h1 class="title">Welcome To The Weather Data Analysis!</h1>
+        <hr>
+
+        <!-- align="left"-->
+        <img src="https://gisgeography.com/wp-content/uploads/2015/09/Horizontal-Datums-620x322.png" class="Landing_plot" alt="Smiley face">
+        <br> <br>
+        <p class="paragraph"> Whether financial, political, or social -- data's true power lies in its ability 
+          to answer questions definitively. Using Python requests, APIs, and JSON traversals 
+          we can answer a fundamental question:</p>
+        <br><br> 
+        <p class="paragraph" id="landpage_question"><strong>"What's the weather like as we approach the equator?"</strong></p> 
+        <br><br>
+        <p class="paragraph">This analysis  contains a list of more than 500 cities around the globe, with a range of 
+          latitude between (-90, 90) and longitudes between (-180, 180), taken randomly (thanks numpy!)</p>
+
+        <p class="paragraph"> If you want to see the data go to <a target="data.html" href="data.html">Data tab</a> and if you want to check the full code in jupyter notebook, go to my <a target="https://github.com/cynthiahuallanca/Portfolio/tree/master/API" href="https://github.com/cynthiahuallanca/Portfolio/tree/master/API"> GitHub Repo</a></p>
+      </div>
+      
+  
+      <!-- Container with Visualizations-->
+      <div class="col-sm-12 col-md-4">
+        <h1 class="title">Visualizations </h1>
+        <hr>
+  
+          <!-- Second container, first row-->
+          <div class="row">
+            
+            <!-- Second container, first row, first plot (1 of 4 plots)-->
+            <div class="col-sm-12 col-sm-6" id="Visualization_second_container">
+                <div class="card text-right" style="width: 18rem;">
+                  <a href="Plot.MaxTemp.html">
+                    <div class="card-body">
+                      <p 
+                      class="card-text"><small class="text-muted">Latitude vs. Max temp</small>
+                      </p>
+                    </div>  
+                    <img src="Resources/assets/images/cards/Fig1.png" class="card-img-top" alt=":( Here goes an image">
+                  </a>
+                </div>
+            </div>
+  
+            <!-- Second container, first row, second plot (2 of 4 plots)-->
+            <div class="col-sm-12 col-sm-6">
+                <div class="card text-right" style="width: 18rem;">
+                  <a href="Plot.Humidity.html">
+                    <div class="card-body">
+                      <p class="card-text"><small class="text-muted">Latitude vs. Humidity</small></p>
+                    </div>
+                    <img src="Resources/assets/images/cards/Fig2.png" class="card-img-top" alt=":( Here goes an image">
+                  </a>
+                </div>
+            </div>
+  
+          </div>
+  
+          <!-- Second row inside second container-->
+          <div class="row">
+  
+            <!-- Second container, second row, first plot (3 of 4 plots)-->
+            <div class="col-sm-12 col-sm-6">
+                <div class="card text-right" style="width: 18rem;">
+                  <a href="Plot.Cloudiness.html">
+                    <div class="card-body">
+                      <p class="card-text"><small class="text-muted">Latitude vs. Cloudiness</small></p>
+                    </div>
+                    <img src="Resources/assets/images/cards/Fig3.png" class="card-img-top" alt=":( Here goes an image">            
+                  </a>
+                  </div>
+            </div>
+  
+            <!-- Second container, second row, second plot (4 of 4 plots)-->
+            <div class="col-sm-12 col-sm-6">
+                <div class="card text-right" style="width: 18rem;">
+                  <a href="Plot.WindSpeed.html">
+                    <div class="card-body">
+                      <p class="card-text"><small class="text-muted">Latitude vs. Wind Speed</small> </p>
+                    </div>
+                    <img src="Resources/assets/images/cards/Fig4.png" class="card-img-top" alt=":( Here goes an image">
+                  </a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

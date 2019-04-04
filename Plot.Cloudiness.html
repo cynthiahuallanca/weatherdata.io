@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- mobile friendly styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- Navbar, falta drop down menu  
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a target="Plots.html" href="Plots.html" href="#plots">Plots</a>
+    <a target="comparision.html" href="comparision.html"href="#comparision">Comparision</a>
+    <a target="data.html" href="data.html" > Data</a>
+    <a target="about.html" href="about.html" href="#about">About</a>
+</div>-->
+<body>
+
+<!-- NavBar with Collapsable Menu, aun falta que quede fuera el Plot-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html" href="#">Weather Data</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href= "Plot.MaxTemp.html" href="#">Max Temperature</a></li>
+              <li><a href= "Plot.Humidity.html" href="#">Humidity</a></li>
+              <li><a href= "Plot.Cloudiness.html" href="#">Cloudines</a></li>
+              <li><a href= "Plot.WindSpeed.html" href="#">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a target="comparision.html" href="comparision.html" href="#">Comparision</a></li>
+          <li><a target="data.html" href="data.html" href="#">Data</a></li>
+          <li><a target="about.html" href="about.html" href="#">About</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+
+
+
+
+<!-- Row 1 with two containers -->
+<div class="container-fluid" >
+    <div class="row"><br>
+  
+      <!-- Container with main Plot-->
+      <div class="col-sm-12 col-md-7" id="Visualization_main_container">
+        <h1 class="title">Cloudiness</h1>
+        <hr>
+        <img src="Resources/assets/images/Fig3.png" class="Visualization_plot" alt="Hi!">
+        <p> Cloudiness and Latitude.. we can deduce that there’s a relation between latitude and cloudiness but combined probably with other factor(s), maybe location and season for example.  
+        </p>
+      </div>
+      
+  
+      
+  
+      <!-- Container with Visualizations-->
+      <div class="col-sm-12 col-md-4">
+          <h1 class="title">Visualizations </h1>
+          <hr>
+    
+            <!-- Second container, first row-->
+            <div class="row">
+              
+              <!-- Second container, first row, first plot (1 of 4 plots)-->
+              <div class="col-sm-12 col-sm-6" id="Visualization_second_container">
+                  <div class="card text-right" style="width: 18rem;">
+                    <a href="Plot.MaxTemp.html">
+                      <div class="card-body">
+                        <p class="card-text"><small class="text-muted">Latitude vs. Max temp</small></p></p>
+                      </div>  
+                      <img src="Resources/assets/images/cards/Fig1.png" class="card-img-top" alt=":( Here goes an image">
+                    </a>
+                  </div>
+              </div>
+    
+              <!-- Second container, first row, second plot (2 of 4 plots)-->
+              <div class="col-sm-12 col-sm-6">
+                  <div class="card text-right" style="width: 18rem;">
+                    <a href="Plot.Humidity.html">
+                      <div class="card-body">
+                        <p class="card-text"><small class="text-muted">Latitude vs. Humidity</small></p>
+                      </div>
+                      <img src="Resources/assets/images/cards/Fig2.png" class="card-img-top" alt=":( Here goes an image">
+                    </a>
+                  </div>
+              </div>
+    
+            </div>
+    
+            <!-- Second row inside second container-->
+            <div class="row">
+    
+              <!-- Second container, second row, first plot (3 of 4 plots)-->
+              <div class="col-sm-12 col-sm-6">
+                  <div class="card text-right" style="width: 18rem;">
+                    <a href="Plot.Cloudiness.html">
+                      <div class="card-body">
+                        <p class="card-text"><small class="text-muted">Latitude vs. Cloudiness</small></p>
+                      </div>
+                      <img src="Resources/assets/images/cards/Fig3.png" class="card-img-top" alt=":( Here goes an image">            
+                    </a>
+                    </div>
+              </div>
+    
+              <!-- Second container, second row, second plot (4 of 4 plots)-->
+              <div class="col-sm-12 col-sm-6">
+                  <div class="card text-right" style="width: 18rem;">
+                    <a href="Plot.WindSpeed.html">
+                      <div class="card-body">
+                        <p class="card-text"><small class="text-muted">Latitude vs. Wind Speed</small> </p>
+                      </div>
+                      <img src="Resources/assets/images/cards/Fig4.png" class="card-img-top" alt=":( Here goes an image">
+                    </a>
+                    </div>
+              </div>
+            </div>
+          
+        
+          </div>
+  
+  
+</body>
+</html>

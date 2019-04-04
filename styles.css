@@ -73,7 +73,7 @@ tablet, iphone or pc  */
   width: 477px;
   height: 280px;
   float: left;
-
+  margin-left: auto;
 }
 
 .paragraph {
@@ -102,4 +102,18 @@ tablet, iphone or pc  */
 
 .navbar-header {
   background-color: rgba(16, 8, 94, 0.685);
+}
+
+@media (max-width:500px) {
+  .Landing_plot {
+    width: 200px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+  }
+
+  .paragraph {
+    display: block;
+  }
+
 }

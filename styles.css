@@ -32,24 +32,8 @@
   font-family: Gill Sans MT;  
 }
 
-/* Style for fig 1 in landpage id = "landpage_fig1
-#landpage_fig1 {
-  fig: 100px
-}
-*/
-/* Change objects sizes depending on the device, cambiar sizes segun 
-tablet, iphone or pc  */
-/* no me esta funcionando, hay algo por sobre este comando 
-@media (max-width: 480px) {
-    #landpage_fig1 {
-    width: 50px;
-    height: 200px;
-    border: #4CAF50;
-  }
 
-}*/
-
-#Visualization_main_container {
+.Visualization_main_container {
   padding-left: 50px;
 }
 
@@ -67,7 +51,6 @@ tablet, iphone or pc  */
 #Visualization_second_container {
   padding-right: 20px;
 }
-
 
 .Landing_plot {
   width: 477px;
@@ -116,8 +99,9 @@ tablet, iphone or pc  */
     display: block;
   }
 
-  .Visualization_main_container {
-  width: 400px;
-  height: 275px;
+  .Visualization_main_image {
+    width: 400px;
+    height: 275px;
   }
+
 }

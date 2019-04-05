@@ -1,6 +1,6 @@
 ## Welcome to the weather data analysis! 
 
-If you want to see the website for this amazing analysis, please go to https://cynthiahuallanca.github.io/weatherdata.io 
+If you want to see the website for this amazing analysis, please go to [amazing website!](https://cynthiahuallanca.github.io/weatherdata.io) 
 
 
 

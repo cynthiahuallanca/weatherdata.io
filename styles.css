@@ -116,4 +116,8 @@ tablet, iphone or pc  */
     display: block;
   }
 
+  .Visualization_main_container {
+  width: 400px;
+  height: 275px;
+  }
 }
